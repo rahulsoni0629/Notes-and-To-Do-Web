@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <div class="notes-box">
+            <div class="note-header">
+                <div class="head1">Notes</div>
+                <button class="new-btn" onclick="createNote(event)">New</button>
+                <button class="note-del-btn" onclick="deleteNote()">Delete</button>
+
+                
+            </div>
+
+            <div class="notes-continaer">
+                
+                
+            </div>   
+        </div>
+
+
+
+        <div class="todo-box">
+            <div class="box-head">
+                <div class="heading">To-do List</div>
+                
+                <input class="input-box"type="text" placeholder="Add your task...">
+                <button class="task-btn">Add Task</button>
+            </div>
+            <div class="task-list">
+                <ul class="ul">
+                    <li>Your Task<button class="del-btn">X</button></li>
+                </ul>  
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
