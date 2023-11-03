@@ -32,20 +32,12 @@ let ntbox = document.getElementsByClassName("note-box");
 let notesContainer = document.getElementsByClassName("notes-continaer")[0];
 
 function createNote(event) {
-    // Create a new textarea element
     let newNote = document.createElement("textarea");
     newNote.classList.add("note-box");
-    newNote.placeholder = "Enter your note here...";
-
-    // Append the new textarea to the notes-container
-    
+    newNote.placeholder = "Enter your note here...";   
     notesContainer.appendChild(newNote);
 }
 
-
-
-
-// delete button
 
 ul.addEventListener("click", function(event) {
     if (event.target.nodeName == "BUTTON") {
@@ -54,14 +46,12 @@ ul.addEventListener("click", function(event) {
     }
 });
 
-// New function for deleting textareas
 function deleteNote() {
     let notesContainer = document.getElementsByClassName("notes-continaer")[0];
     let textareas = notesContainer.getElementsByClassName("note-box");
 
-    // Check if there are textareas to delete
     if (textareas.length > 0) {
-        // Remove the last textarea (you can modify this logic based on your requirements)
+
         notesContainer.removeChild(textareas[textareas.length - 1]);
     }
 }
